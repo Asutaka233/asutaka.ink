@@ -1,0 +1,5 @@
+# privacy
+.env
+
+# macOS
+.DS_store
