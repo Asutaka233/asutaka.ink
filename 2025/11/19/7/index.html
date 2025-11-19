@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html 
+	lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> 朝朝暮暮，不过黄粱一梦 -  Asutaka的小站</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+			<link rel="stylesheet" href="//at.alicdn.com/t/c/font_5044020_000fpmsysk4x6l.css" crossorigin />
+		
+		<link
+			rel="shortcut icon"
+			href="/image/DLTlogo.png"
+			type="image/png"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 7.3.0"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('/image/background.png')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="Asutaka的小站">
+        <img
+			src="/image/head.png"
+			alt="Asutaka"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a href="/image/head.png" title="Asutaka">
+			<img
+				src="/image/head.png"
+				alt="Asutaka"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>7</div>
+		<div><span>标签</span>2</div>
+		<div><span>分类</span>2</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archive.html"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/about.html"
+			title="关于本人"
+		>
+			<i
+				class="kirafont
+					
+						icon-user
+					"
+			></i>
+			<div class="kira-list-item-content">
+				关于本人
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/friends.html"
+			title="我的朋友"
+		>
+			<i
+				class="kirafont
+					
+						icon-team
+					"
+			></i>
+			<div class="kira-list-item-content">
+				我的朋友
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			<div class="kira-widget-wrap">
+	<div class="kira-widget kira-social">
+		
+			<a
+				class="mdui-ripple"
+				href="https://github.com/Asutaka233/"
+				target="_blank"
+				mdui-tooltip="{content: 'GitHub'}"
+				style="color: rgb(25, 23, 23); background-color: rgba(25, 23, 23, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-github
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://osu.ppy.sh/users/17619013"
+				target="_blank"
+				mdui-tooltip="{content: 'osu!'}"
+				style="color: rgb(255, 102, 204); background-color: rgba(255, 102, 204, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-osu
+					"
+				></i>
+			</a>
+		
+	</div>
+</div>
+
+		
+			
+  <div class="kira-widget-wrap">
+    <h3 class="kira-widget-title">分类</h3>
+    <div class="kira-widget">
+      <ul class="category-list">
+        
+        
+
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/更新日志/">
+              更新日志
+            </a>
+            <span class="category-list-count">3</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/音乐/">
+              音乐
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/LaTeX/" style="font-size: 10px;">LaTeX</a> <a href="/tags/osu/" style="font-size: 10px;">osu!</a>
+		</div>
+		
+	</div>
+
+
+		
+			
+	<div class="kira-widget-wrap">
+		<h3 class="kira-widget-title">
+			文章归档
+		</h3>
+		<div class="kira-widget">
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">7</span></li></ul>
+		</div>
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2025
+		<a href="/">Asutaka</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<link rel="stylesheet" href="/css/kira-image.css">
+
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div
+			class="kira-post-cover"
+			style="padding-bottom: '56.25%'"
+		>
+			<img
+				data-src="/image/background.png"
+				data-sizes="auto"
+				alt="朝朝暮暮，不过黄粱一梦"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>朝朝暮暮，不过黄粱一梦</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2025年11月19日</a>
+			<a><i class="kirafont icon-edit-fill"></i>1.4k 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 5 分钟</a>
+		</div>
+		<html><head></head><body><p>如果你能看到这个网页，说明你还记得我，那么我们也许会在未来的某个时刻，以另一种方式再见面。</p>
+<p>这两天，我思考了许多。我的过去、我的当下、我的未来。我很清楚自己一路是怎么走过来的，也清楚我是为了什么而走到现在。我的理想、我的信仰、以及我对这个社会最朴素而深沉的爱，这些被我视作生命中最宝贵的东西让我能够从小到大战胜这么多的困难而来到如今我脚下的这片土地上。我很难说这是无从把握的偶然，还是命运和历史的必然。</p>
+<p>但是，我也做出过很多错误的决定。有些被刻印在我的脑海中挥之不去，成为我一生不愿面对的黑洞；而有些东西，我已然忘却，但是它却在我不经意间给予我致命的攻击。</p>
+<p>我无法否认过去的自己，因为我不可能去抹杀过去的自己，把自己的过去与现在割裂开来，就如同我们每个人的根源，是我们生命中无法斩断的。我唯一能做的，只有去面对过去，接受过去带给我的一切后果，然后继续往前走，走到理想的尽头。</p>
+<p>来到推特的几个月以来，我获得另一种存在的轨迹，我收获了大家的认可和信任，也在这个群体中得到了认同。但是，我应该一开始就清楚，总有一天，这些将会成为虚幻中的存在，也许就像我们曾经那些一闪而过的瞬间，遗留在心底而再也不会遇见。当我收到导员信息的那一刻、会议室里公安展示给我警官证的那时起，我就应该意识到，一切都该结束了。</p>
+<p>那8个小时，我不清楚自己是怎么度过的。我很感激导员一直在我旁边，至少愿意去倾听我的解释。我跟这个社会中的大多数人一样，我没有失败的机会，我也没有条件去支持我任性。至少我还要去保全自己。所以我注销了自己的推特账号，连同那个对于我来说也许意味着什么的数字一同消失在数据洪流中了。</p>
+<p>直到现在，一切也许尘埃落定了，但也许还会有新的风波等待着我。我的未来也在这次事件中左右摇摆，我必须要稳住自己的方向，不然可能真的就要倾覆然后一无所有了。</p>
+<p>我是一个复杂的人，我在网络世界也是一个多面的人。但是，无论什么样的我，我清楚这些都是我无法剥离的存在。</p>
+<p>要我说自己是一个什么样的人，我始终愿意相信自己是一个如一的人，这也是我的一个信条。我爱着这个世界的普罗大众，我爱着能为人民创造幸福的土地，我更爱着这片孕育了我而我割舍不掉的土地。我过去因为爱而犯了错，我也曾过度轻信自己所以为的，但最后发现，这些不但没有带来什么改变，反而成了多年后刺向我的利刃。</p>
+<p>这次以后，我失去了什么，我又还剩下什么。我失去的也许再也不会回来，但是我要清楚这些失去的东西对于我来说意味着什么。至于剩下的东西，我希望它们能够继续陪伴我的人生旅程，不要再让我丢下什么东西了。</p>
+<p>关于以后的展望，我舍不得离开大家，但是我必须要告别了。我希望下次同大家见面的时候，我能够作为那个理想中的自己跟大家见面，能够再一次成为大家心中的那个阿苏塔卡，是我成长之后，能够真正把过去懵懂的思想展开出来的那个思想者，我也将用我的毕生所学，奉献给我所一直热爱的大家，奉献给我们共同生活的这片共同热爱着的土地。</p>
+<p>那个害得我走向如今这番危机的那个人，虽然我不知道你是谁，但是我会永远记住这一刻，永远记得你做过的事，你的无知和愚昧导致我遭受如此苦难。当然，以后我会如何看待这件事情，只能交由未来了。</p>
+<p>我一直存在着，我永远身处在这个世界的任何一个可能的地方，我也永远会是那个一以贯之坚守的自己。我要在哲学的道路上继续前进，就算前方不知道还要面临多少挑战。因为这是我的理想，所以我需要用自己的生命去坚守。我相信如果有一天自己真正成为了哲学家，大家也会同样为我而高兴吧。</p>
+<p>最后，我想跟大家说，我不得不去面对现实了，我要换一种方式继续生活。大家有缘再见，总有一天我们会再相见。当然，只要那份心还在，我无时无刻都没有离开大家。</p>
+<p><strong>大家保重。</strong>如果有一天还想联系我的话，就去沿着我留下的那些印记寻找我吧。</p>
+</body></html>
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>本文作者：</strong>Asutaka<br>
+        <strong>本文链接：</strong><a href="http://asutaka.ink/2025/11/19/7/" title="http:&#x2F;&#x2F;asutaka.ink&#x2F;2025&#x2F;11&#x2F;19&#x2F;7&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;asutaka.ink&#x2F;2025&#x2F;11&#x2F;19&#x2F;7&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			    
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	<div class="giscus"></div>
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="Asutaka233/asutaka.ink"
+      data-repo-id="R_kgDOQEyA0g"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOQEyA0s4Cw0WW"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  
+
+	</div>
+	
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>
