@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html 
+	lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> 通过VPS实现24小时不间断刷网课 -  Asutaka的小站</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+			<link rel="stylesheet" href="//at.alicdn.com/t/c/font_5044020_000fpmsysk4x6l.css" crossorigin />
+		
+		<link
+			rel="shortcut icon"
+			href="/image/DLTlogo.png"
+			type="image/png"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 7.3.0"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('/image/background.png')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="Asutaka的小站">
+        <img
+			src="/image/head.png"
+			alt="Asutaka"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a href="/image/head.png" title="Asutaka">
+			<img
+				src="/image/head.png"
+				alt="Asutaka"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>10</div>
+		<div><span>标签</span>2</div>
+		<div><span>分类</span>2</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archive.html"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/about.html"
+			title="关于本人"
+		>
+			<i
+				class="kirafont
+					
+						icon-user
+					"
+			></i>
+			<div class="kira-list-item-content">
+				关于本人
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/friends.html"
+			title="我的朋友"
+		>
+			<i
+				class="kirafont
+					
+						icon-team
+					"
+			></i>
+			<div class="kira-list-item-content">
+				我的朋友
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/sayings.html"
+			title="留言板"
+		>
+			<i
+				class="kirafont
+					
+						icon-edit-fill
+					"
+			></i>
+			<div class="kira-list-item-content">
+				留言板
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			<div class="kira-widget-wrap">
+	<div class="kira-widget kira-social">
+		
+			<a
+				class="mdui-ripple"
+				href="https://github.com/Asutaka233/"
+				target="_blank"
+				mdui-tooltip="{content: 'GitHub'}"
+				style="color: rgb(25, 23, 23); background-color: rgba(25, 23, 23, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-github
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://osu.ppy.sh/users/17619013"
+				target="_blank"
+				mdui-tooltip="{content: 'osu!'}"
+				style="color: rgb(255, 102, 204); background-color: rgba(255, 102, 204, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-osu
+					"
+				></i>
+			</a>
+		
+	</div>
+</div>
+
+		
+			
+  <div class="kira-widget-wrap">
+    <h3 class="kira-widget-title">分类</h3>
+    <div class="kira-widget">
+      <ul class="category-list">
+        
+        
+
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/更新日志/">
+              更新日志
+            </a>
+            <span class="category-list-count">4</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/音乐/">
+              音乐
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/LaTeX/" style="font-size: 10px;">LaTeX</a> <a href="/tags/osu/" style="font-size: 10px;">osu!</a>
+		</div>
+		
+	</div>
+
+
+		
+			
+	<div class="kira-widget-wrap">
+		<h3 class="kira-widget-title">
+			文章归档
+		</h3>
+		<div class="kira-widget">
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">10</span></li></ul>
+		</div>
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2025
+		<a href="/">Asutaka</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<link rel="stylesheet" href="/css/kira-image.css">
+
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div class="kira-post-cover">
+			<img
+				data-src="/image/2025.12.6_1.png"
+				data-sizes="auto"
+				alt="通过VPS实现24小时不间断刷网课"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>通过VPS实现24小时不间断刷网课</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2025年12月06日</a>
+			<a><i class="kirafont icon-edit-fill"></i>994 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 4 分钟</a>
+		</div>
+		<html><head></head><body><h2><span id="%E5%89%8D%E8%A8%80">前言</span></h2><p>整篇文章某种意义上来说不属于教程，是我折腾这个东西的一个流程的记录，不过里面的步骤的普适性还是比较高的，在各种情况下也能应用，因此也可以参考我的步骤去刷网课。</p>
+<h2><span id="%E8%B5%B7%E5%9B%A0">起因</span></h2><p>最近学校网课任务越来越多，而且有的网课存在时间限制。我因为经常要带着笔记本去上课，网络环境不固定，再加上自己健忘，所以很多时候后台是不方便挂网课的，因此我也产生了通过VPS来挂网课的想法，这样的话就不会受到环境影响从而稳定的刷网课。</p>
+<p>而且既然单纯用来挂网页，资源占用并不会太多，只需要一个最基础的配置就可以了，价格不会特别贵，属于大学生能接受的范围（恐怕最吃配置的就是Windows Server了）</p>
+<h2><span id="%E6%8A%98%E8%85%BE%E8%BF%87%E7%A8%8B">折腾过程</span></h2><h3><span id="%E5%87%86%E5%A4%87%E9%98%B6%E6%AE%B5">准备阶段</span></h3><p>其实这个想法由来已久，只不过自己比较忙，所以一直没实施。后来趁空余时间一点点推进。第一步肯定是找供应商。这种需求我认为没必要找权威的服务商，于是我在b站、搜索引擎等，搜索关键词随便找了一个自称在做福利很便宜的服务商，然后就注册了账号。实名认证的过程特别傻逼，不知道为什么他那个接口人脸识别总是过不去，最后来回弄了好几次才成功（说来搞笑，他识别不出来我眨眼，最后我把眼睁的老大才看出来我是在眨眼）。实名认证通过以后，基本就是租机子了。我向来是喜欢用Linux的，但由于用途限制不得不用Windows Server。</p>
+<h3><span id="%E9%81%AD%E9%81%87%E6%BB%91%E9%93%81%E5%8D%A2">遭遇滑铁卢</span></h3><p>我租的服务器性能比较尴尬（2H2G），为了腾出更多性能，我选择了<strong>Windows Server 2012 R2</strong>，一个基于Win8.1的服务器系统。这个系统内置的是IE浏览器，连正常的网页都难能打开，后来我通过RDP复制粘贴空投了一个Firefox，结果发现最新版本的火狐不支持，只能全方百计寻找115长期支持版的火狐。当然这也为后来的问题埋下了伏笔。<br>这个浏览器确实比较卡了，连扩展商店都进不去，我就在MacBook上把Tampermonkey的文件下载下来，再空投到服务器上，通过文件安装扩展。后面OCS网课助手脚本也能正常安装。但是，当我打开网课的时候，提示我<em><strong>“由于视频文件损坏或是该视频使用了你的浏览器不支持的功能，播放终止”</strong></em>，当时很快就意识到可能是由于版本过老，解编码器缺了，于是自己各种摸索，感觉要花了半小时以上，也没找到解决方案。最后想了一下，这个时间成本是巨大的，而且无法保证成功，不如回到第一步，换2016服务器系统，至少那个是基于win10的，各种软件还在支持。</p>
+<h3><span id="%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F">部署成功</span></h3><p>我于是在后台把系统重装了一下，换成了Windows Server 2016，然后按照刚才的流程重新安装一遍软件（幸好我在MacBook里还留了一份，所以弄的也比较快），由于系统比较新，各种最新的软件还在支持，所以安装的时候方便多了。最后，网课也成功播放了。<br><img data-fancybox="gallery" data-sizes="auto" data-src="/image/2025.12.6_2.png" alt="alt-text" class="lazyload"></p>
+<h3><span id="%E4%BA%8B%E5%90%8E%E8%A7%82%E5%AF%9F">事后观察</span></h3><p>总体来说，搭配脚本是能够一直刷下去的，就是播放的时候卡卡的，不过我又不会去看，所以写没有任何印象。总的来说，这个部署的性价比是比较高的，尤其是网课比较多的时候。</p>
+</body></html>
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>本文作者：</strong>Asutaka<br>
+        <strong>本文链接：</strong><a href="http://asutaka.ink/2025/12/06/10/" title="http:&#x2F;&#x2F;asutaka.ink&#x2F;2025&#x2F;12&#x2F;06&#x2F;10&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;asutaka.ink&#x2F;2025&#x2F;12&#x2F;06&#x2F;10&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			    
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	<div class="giscus"></div>
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="Asutaka233/asutaka.ink"
+      data-repo-id="R_kgDOQEyA0g"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOQEyA0s4Cw0WW"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  
+
+	</div>
+	
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>
