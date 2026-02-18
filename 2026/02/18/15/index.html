@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html 
+	lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> 【持续更新】坏世界的好问题：赵汀阳的怀疑论哲学笔记 -  Asutaka的小站</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+			<link rel="stylesheet" href="//at.alicdn.com/t/c/font_5044020_000fpmsysk4x6l.css" crossorigin />
+		
+		<link
+			rel="shortcut icon"
+			href="/image/DLTlogo.png"
+			type="image/png"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 7.3.0"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('/image/background.png')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="Asutaka的小站">
+        <img
+			src="/image/head.png"
+			alt="Asutaka"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a href="/image/head.png" title="Asutaka">
+			<img
+				src="/image/head.png"
+				alt="Asutaka"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>15</div>
+		<div><span>标签</span>2</div>
+		<div><span>分类</span>6</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archive.html"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/about.html"
+			title="关于本人"
+		>
+			<i
+				class="kirafont
+					
+						icon-user
+					"
+			></i>
+			<div class="kira-list-item-content">
+				关于本人
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/friends.html"
+			title="我的朋友"
+		>
+			<i
+				class="kirafont
+					
+						icon-team
+					"
+			></i>
+			<div class="kira-list-item-content">
+				我的朋友
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/sayings.html"
+			title="留言板"
+		>
+			<i
+				class="kirafont
+					
+						icon-edit-fill
+					"
+			></i>
+			<div class="kira-list-item-content">
+				留言板
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			<div class="kira-widget-wrap">
+	<div class="kira-widget kira-social">
+		
+			<a
+				class="mdui-ripple"
+				href="https://github.com/Asutaka233/"
+				target="_blank"
+				mdui-tooltip="{content: 'GitHub'}"
+				style="color: rgb(25, 23, 23); background-color: rgba(25, 23, 23, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-github
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://bsky.app/profile/asutaka.ink"
+				target="_blank"
+				mdui-tooltip="{content: 'Bluesky'}"
+				style="color: rgb(0, 132, 180); background-color: rgba(0, 132, 180, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-brands-bluesky
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://x.com/Lain75442"
+				target="_blank"
+				mdui-tooltip="{content: 'Twitter'}"
+				style="color: rgb(29, 155, 240); background-color: rgba(29, 155, 240, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-tuite1
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://t.me/Asutaka233"
+				target="_blank"
+				mdui-tooltip="{content: 'Telegram'}"
+				style="color: rgb(0, 136, 204); background-color: rgba(0, 136, 204, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-telegram
+					"
+				></i>
+			</a>
+		
+	</div>
+</div>
+
+		
+			
+  <div class="kira-widget-wrap">
+    <h3 class="kira-widget-title">分类</h3>
+    <div class="kira-widget">
+      <ul class="category-list">
+        
+        
+
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/哲学/">
+              哲学
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/年终总结/">
+              年终总结
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/摄影/">
+              摄影
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/教程/">
+              教程
+            </a>
+            <span class="category-list-count">3</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/更新日志/">
+              更新日志
+            </a>
+            <span class="category-list-count">4</span>
+          </li>
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/音乐/">
+              音乐
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/LaTeX/" style="font-size: 10px;">LaTeX</a> <a href="/tags/osu/" style="font-size: 10px;">osu!</a>
+		</div>
+		
+	</div>
+
+
+		
+			
+	<div class="kira-widget-wrap">
+		<h3 class="kira-widget-title">
+			文章归档
+		</h3>
+		<div class="kira-widget">
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">10</span></li></ul>
+		</div>
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2026
+		<a href="/">Asutaka</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<link rel="stylesheet" href="/css/kira-image.css">
+
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div class="kira-post-cover">
+			<img
+				data-src="/image/zty_cover.png"
+				data-sizes="auto"
+				alt="【持续更新】坏世界的好问题：赵汀阳的怀疑论哲学笔记"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>【持续更新】坏世界的好问题：赵汀阳的怀疑论哲学笔记</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2026年02月18日</a>
+			<a><i class="kirafont icon-edit-fill"></i>2.2k 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 8 分钟</a>
+		</div>
+		<html><head></head><body><h1><span id="%E5%89%8D%E8%A8%80">前言</span></h1><p>前两天我在B站上花99元购买了社科院赵汀阳老师的这一系列课程。赵汀阳老师在学界享誉盛名，我的大学老师也给我推荐过赵汀阳老师的视频。因此，在选择购买这套课程的时候，我的心情是很崇敬的。赵汀阳老师这一课程内容来源自他于2009年出版的著作《坏世界研究——作为第一哲学的政治哲学》。这两年政治哲学正式加入大学哲学的子学科，成为哲学专业的第九个分支。这也足以证明这本书以及这套课程是有着一定的前瞻性的。而且，本课程的这一问题，实际上无论是哲学专业的学生，还是非专业人士，都是比较有价值的，尤其是在当今政治讨论公开化、大众化的社会思潮演进下，一种系统的政治认知，对于每一社会个体都是必要的，只有这样才能最大限度地避免谬误。但是，这也不意味着拒斥政治观点的多元化，我们对于一切问题，尤其是哲学问题，都应当保持一种开放化的态度。</p>
+<p>因此，在这里，我通过自己的视角，记录自己学习这一课程的心得体会，以及一些概念的摘录和总结。当然，我很愿意在笔记中加入自己的思考，尽管其中有些内容可能并不准确。因此我也诚恳接受大家的批评指正。总的来说，笔记的更新是按照自己的阅读进度来的，不过赵汀阳老师这一课程为周更，因此我的速度差不多也是如此。</p>
+<p>不过，我的笔记终究只是我自己的思考，里面必然地会与原本内容产生一定的误差。所以，如果真的对这套课程的内容感兴趣的话，还请购买课程观看原始内容，这样才能有更加深刻的了解以及支持公共平台上高质量哲学内容的创作。</p>
+<p>在这篇笔记中，我自己的想法会用斜体标注，直接引用的文本大多会用引号表示。加粗为主要命题。</p>
+<h1><span id="%E6%AD%A3%E6%96%87">正文</span></h1><h2><span id="%E7%AC%AC%E4%B8%80%E8%AF%BE%E6%AF%8F%E4%B8%AA%E4%BA%BA%E9%83%BD%E6%9C%89%E8%87%AA%E5%B7%B1%E7%9A%84%E5%93%B2%E5%AD%A6%E5%AD%97%E5%85%B8">第一课：每个人都有自己的哲学字典</span></h2><ul>
+<li><strong>知识与哲学的区别</strong>：知识的问题是有答案的，而哲学的问题是没有答案的</li>
+<li><strong>哲学的问题无处不在，生活中任何地方都会产生哲学问题</strong></li>
+<li><strong>几乎没有专门属于哲学的问题</strong>：<em>这个命题是否成立？作为形而上学的问题除了哲学之外是否还能有其他学科能够解读？</em></li>
+<li><strong>哲学的问题都是从各个学科里面过来的</strong>。其他学科建立在一系列假设以及公理之上，但是这一学科并不能触及对那些根本性问题或者公理的回答，因为一切学科展开建立在这些预设之上。相反，哲学反而能够形成对这些要素的探讨</li>
+<li><strong>对基本问题的解释其答案是循环性的</strong>：这种循环性体现在“基本问题的答案可能依赖于另一种答案的解释”（原话）。<em>但是我认为这样一种对基本问题的解释可能体现出另外一种图式，即一个基本问题，它的答案体现在不同角度不同学科对这一问题的视域之中，即一种一体多面式的展开方式。在我看来，赵汀阳老师的阐述是一种横向的解读方式，但是也许这一问题（基本问题的方法论）存在一种纵向的解读方式</em></li>
+<li>“知识解释不了知识的基础的最根本的原因，是因为这些基本问题都触及了思想的边界”：一种自反性，即自我解释性，<em>康德的二律背反，这一原理揭示了人类理性的边界，我们并不是对于所有问题都能得出答案，因此对形而上学问题需要一种警惕性。（注意，“自反性”和“二律背反”在这里并不等同）</em></li>
+<li><strong>属于哲学自己的问题</strong>：哲学对哲学方法的反思：<em>体现为一种世界观的构建</em></li>
+<li><strong>“看法”和“方法”</strong>：<ul>
+<li>“<strong>方法</strong>”是一种用来制造某种事物或某种观念的可操作的技术。这种可操作性在大多数情况下表现为递归性。方法是用来发现问题和解决问题的（makinging as）</li>
+<li>“<strong>看法</strong>”：一种表态，<em>或者说，是一种doxa（意见）</em>（making as）</li>
+<li><em>“方法”是一种系统化的理论体系，它体现出一种生成性</em>。“方法/解法能够改变事物状态”，而看法不能</li>
+</ul>
+</li>
+<li><strong>每个人心中都有一本自己的哲学字典</strong>。<em>其实就是自己的世界观和方法论，用于指导生活</em><ul>
+<li>分类学问题：分类的方法不一定相同，并不存在完全客观的分类，因为我们不能确信自己所观察到的是否为真正的客观世界（<em>一种怀疑论视角</em>），世界也不一定是由实体构成的客观世界的概念就是一种想象</li>
+<li>亚里士多德：种加属差（思维经济），镜像出人类社会的等级制。另一种可能的分类方法：其主体不是实体，而是关系。一种基于自身需要的分类方法<em>海德格尔的生存论，即存在者作为上手事物向我们展开</em></li>
+<li>字典的基本要点：建立一种链接方式：传统的链接方式是“分类学的”，即概念之间的链接</li>
+<li>另一种链接方式：以问题为单位。瓦尔堡式的问题链接，博尔赫斯的迷宫路径。<em>这里体现出了哲学思维中突出的问题意识</em></li>
+<li>迷宫意象：时间的分叉、无限的时间计划。“人类能拥有近乎上帝般的主体性，全面反思世界，核心在于思维与语言能表达超现实的多维时间及一切可能事件。这正是思想成立的根本条件。”<em>人类能够在诸多可能性中谋划自身的生存，这也是人类区别于动物的主要特征。或者换句话说，人类在这种可能性的展开中取得自身独立性，从自身的无规定性中生成自身。同时这也体现出人类的一种超越时间性的思想</em></li>
+</ul>
+</li>
+<li>我们的思想对象实际上是大于现实的</li>
+<li>传统哲学的对象只有“实在”和“必然性”，是有局限的。<em>从古希腊哲学本原问题的讨论，再到后面认识论转向，思维与存在、现象与本质的对立，传统哲学的目标始终在于探寻那个最为本质性的本体，通过这一本体必然地派生出世界，但很显然这一传统已经面临巨大的困境</em>。</li>
+</ul>
+<h2><span id="%E7%AC%AC%E4%BA%8C%E8%AF%BE%E6%80%80%E7%96%91%E8%AE%BA%E4%B8%8D%E5%90%A6%E5%AE%9A%E7%AD%94%E6%A1%88%E8%80%8C%E6%98%AF%E9%87%8D%E5%90%AF%E6%80%9D%E6%83%B3">第二课：怀疑论：不否定答案而是重启思想</span></h2><h2><span id="%E7%AC%AC%E4%B8%89%E8%AF%BE%E6%84%8F%E4%B9%89%E6%82%96%E8%AE%BA%E5%AE%8C%E7%BE%8E%E4%B8%BA%E4%BD%95%E4%BC%9A%E7%BB%88%E7%BB%93%E5%AD%98%E5%9C%A8%E7%9A%84%E6%84%8F%E4%B9%89">第三课：意义悖论：完美为何会终结存在的意义</span></h2><h2><span id="%E7%AC%AC%E5%9B%9B%E8%AF%BE%E7%A7%A9%E5%BA%8F%E7%9A%84%E5%8E%86%E5%8F%B2%E4%BA%BA%E7%9A%84%E9%99%90%E5%BA%A6%E5%93%B2%E5%AD%A6%E7%9A%84%E4%BD%BF%E5%91%BD%E4%B8%8A">第四课：秩序的历史、人的限度、哲学的使命（上）</span></h2><h2><span id="%E7%AC%AC%E4%BA%94%E8%AF%BE%E7%A7%A9%E5%BA%8F%E7%9A%84%E5%8E%86%E5%8F%B2%E4%BA%BA%E7%9A%84%E9%99%90%E5%BA%A6%E5%93%B2%E5%AD%A6%E7%9A%84%E4%BD%BF%E5%91%BD%E4%B8%8B">第五课：秩序的历史、人的限度、哲学的使命（下）</span></h2><h2><span id="%E7%AC%AC%E5%85%AD%E8%AF%BE%E4%BB%B7%E5%80%BC%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0">第六课：价值的本质是一个函数</span></h2><h2><span id="%E7%AC%AC%E4%B8%83%E8%AF%BE%E6%88%91%E4%BB%AC%E7%9F%A5%E9%81%93%E4%BB%80%E4%B9%88%E6%98%AF%E5%A5%BD%E5%90%97">第七课：我们知道什么是“好”吗</span></h2><h2><span id="%E7%AC%AC%E5%85%AB%E8%AF%BE%E4%BB%96%E4%BA%BA%E4%B8%8D%E5%90%8C%E6%84%8F%E4%BA%BA%E7%B1%BB%E7%94%9F%E5%AD%98%E7%9A%84%E5%85%83%E9%9A%BE%E9%A2%98">第八课：他人不同意，人类生存的元难题</span></h2><h2><span id="%E7%AC%AC%E4%B9%9D%E8%AF%BE%E5%88%9D%E5%A7%8B%E7%8A%B6%E6%80%81%E4%BB%8E%E9%9C%8D%E5%B8%83%E6%96%AF%E4%B8%9B%E6%9E%97%E5%88%B0%E6%BC%94%E5%8C%96%E5%8D%9A%E5%BC%88%E7%9A%84%E8%B5%B7%E7%82%B9">第九课：初始状态：从霍布斯丛林到演化博弈的起点</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E8%AF%BE%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F%E4%B8%AD%E7%9A%84%E4%B9%9D%E7%A7%8D%E6%9D%83%E5%8A%9B%E6%9D%A5%E6%BA%90">第十课：《权力的游戏》中的九种权力来源</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E4%B8%80%E8%AF%BE%E5%BD%93%E5%BF%83%E6%B0%91%E4%B8%BB%E7%9A%84%E9%99%B7%E9%98%B1">第十一课：当心民主的陷阱！</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E4%BA%8C%E8%AF%BE%E6%99%BA%E6%85%A7%E6%B0%91%E4%B8%BB%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%8F%8C%E5%90%91%E6%8A%95%E7%A5%A8%E4%B8%8E%E6%99%BA%E6%85%A7%E5%8A%A0%E6%9D%83">第十二课：智慧民主的设计：双向投票与智慧加权</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E4%B8%89%E8%AF%BE%E5%B9%B8%E7%A6%8F%E8%AF%A5%E5%BD%92%E5%93%AA%E4%B8%AA%E5%AD%A6%E7%A7%91%E7%A0%94%E7%A9%B6">第十三课：幸福该归哪个学科研究</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E5%9B%9B%E8%AF%BE%E5%AF%B9%E7%A7%B0%E6%80%A7%E5%8E%9F%E5%88%99%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89%E5%85%AC%E6%AD%A3">第十四课：对称性原则如何定义“公正”</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E4%BA%94%E8%AF%BE%E8%B6%85%E8%B6%8A%E8%A7%84%E5%88%99%E8%87%AA%E6%88%91%E7%89%BA%E7%89%B2%E7%9A%84%E4%BC%A6%E7%90%86%E9%AB%98%E5%BA%A6">第十五课：超越规则：自我牺牲的伦理高度</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E5%85%AD%E8%AF%BE%E8%A7%84%E5%88%99%E4%B8%8E%E8%A7%84%E8%8C%83%E7%89%B9%E6%9D%83%E4%BD%95%E4%BB%A5%E8%B6%85%E8%B6%8A%E8%A7%84%E5%88%99">第十六课：规则与规范：特权何以超越规则</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E4%B8%83%E8%AF%BE%E6%B3%95%E5%BE%8B%E7%9A%84%E5%85%83%E5%AE%9A%E7%90%86">第十七课：法律的元定理</span></h2><h2><span id="%E5%BC%9F%E5%8D%81%E5%85%AB%E8%AF%BE%E8%A7%84%E5%88%99%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E6%94%BF%E6%B2%BB%E5%AD%A6%E4%B8%8E%E5%8D%9A%E5%BC%88%E8%AE%BA%E8%A7%A3%E9%87%8A">弟十八课：规则的经济学、政治学与博弈论解释</span></h2><h2><span id="%E7%AC%AC%E5%8D%81%E4%B9%9D%E8%AF%BE%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99%E7%9A%84%E5%AD%98%E6%B4%BB%E5%8A%9B%E5%8D%9A%E5%BC%88%E8%AE%BA%E4%B9%8B%E5%A4%96%E7%9A%84%E5%8F%AF%E8%83%BD">第十九课：游戏规则的存活力：博弈论之外的可能？</span></h2><h2><span id="%E7%AC%AC%E4%BA%8C%E5%8D%81%E8%AF%BE%E6%8A%BD%E8%B1%A1%E4%BA%BA%E7%8E%B0%E4%BB%A3%E4%BA%BA%E4%B8%BA%E4%BD%95%E5%A4%B1%E5%8E%BB%E4%BA%86%E7%8B%AC%E7%89%B9%E6%80%A7">第二十课：抽象人：现代人为何失去了独特性</span></h2><h2><span id="%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E8%AF%BE%E4%BA%BA%E4%B8%8E%E5%85%B3%E7%B3%BB%E7%9A%84%E5%BC%82%E5%8C%96">第二十一课：人与关系的异化</span></h2><h2><span id="%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E8%AF%BE%E8%87%AA%E7%94%B1%E4%B8%8E%E5%B9%B3%E7%AD%89%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E4%B8%A4%E5%85%A8">第二十二课：自由与平等为何难以两全</span></h2><h2><span id="%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%89%E8%AF%BE%E4%BB%8E%E6%99%AE%E9%81%8D%E4%BB%B7%E5%80%BC%E5%88%B0%E5%BF%85%E8%A6%81%E4%BB%B7%E5%80%BC">第二十三课：从普遍价值到必要价值</span></h2><h2><span id="%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%9B%9B%E8%AF%BE%E9%81%93%E5%BE%B7%E9%87%91%E8%A7%84%E5%88%99%E5%A6%82%E4%BD%95%E7%9C%9F%E6%AD%A3%E5%9C%B0%E4%B8%BA%E4%BB%96%E4%BA%BA%E7%9D%80%E6%83%B3">第二十四课：道德金规则：如何真正地为他人着想</span></h2><h2><span id="%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%94%E8%AF%BE%E4%BA%BA%E6%9D%83%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%B8%80%E7%A7%8D%E8%B5%84%E6%A0%BC">第二十五课：人权的本质是一种资格</span></h2><h1><span id="%E5%90%8E%E8%AE%B0">后记</span></h1><h1><span id="%E6%B5%B7%E6%8A%A5">海报</span></h1><p><img data-fancybox="gallery" data-sizes="auto" data-src="/image/zty.png" alt="封面" class="lazyload"></p>
+</body></html>
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>本文作者：</strong>Asutaka<br>
+        <strong>本文链接：</strong><a href="http://asutaka.ink/2026/02/18/15/" title="http:&#x2F;&#x2F;asutaka.ink&#x2F;2026&#x2F;02&#x2F;18&#x2F;15&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;asutaka.ink&#x2F;2026&#x2F;02&#x2F;18&#x2F;15&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			                      
+			<!-- 先找到与当前文字相同的目录 -->
+			   
+			<!-- 在找到当前文章所在的 index -->
+			          
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+			<a class="kirafont icon-container-fill -link" href="/categories/%E5%93%B2%E5%AD%A6/">哲学</a>
+		
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	<div class="giscus"></div>
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="Asutaka233/asutaka.ink"
+      data-repo-id="R_kgDOQEyA0g"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOQEyA0s4Cw0WW"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  
+
+	</div>
+	
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>
