@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, Asutaka</rights>
   <subtitle>阿苏塔卡的个人博客</subtitle>
   <title>Asutaka的小站</title>
-  <updated>2026-02-22T05:56:48.645Z</updated>
+  <updated>2026-02-23T11:37:35.301Z</updated>
+  <entry>
+    <author>
+      <name>Asutaka</name>
+    </author>
+    <category term="更新日志" scheme="http://asutaka.ink/categories/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/"/>
+    <content>
+      <![CDATA[<html><head></head><body><p>经过申请，本站已获得<a href="https://icp.gov.moe/">萌国ICP</a>备案，正式加入萌国宇宙。现在可以通过萌国ICP备案官网查询到本站<a href="https://icp.gov.moe/?keyword=20269659">备案信息</a>，获取到本站基本情况。</p><p>至于跃迁接口，在本人技术成熟后会加上。目前由于能力有限，对前端修改不熟练，所以并没有尝试。</p><p><strong>注意：该备案不带有任何法律效力，仅供身份标识。</strong></p><h2><span id="%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E7%94%B3%E8%AF%B7%E5%AE%98%E6%96%B9%E5%A4%87%E6%A1%88">为什么不申请官方备案</span></h2><p>只有在中国大陆服务商购买的机器才能够通过服务商申请备案，本站以静态网页形式挂在在Github服务器上，并且不直接向中国大陆提供访问服务，因此《<a href="https://www.nmpa.gov.cn/xxgk/fgwj/flxzhfg/20250416164819194.html">互联网信息服务管理办法</a>》以及《<a href="https://www.cac.gov.cn/2005-02/09/c_1112147171.htm">非经营性互联网信息服务备案管理办法</a>》中有关备案的条文不适用于本站，本站也无法申请相关备案。</p><h2><span id="%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7%E8%90%8C%E5%9B%BDicp%E5%A4%87%E6%A1%88">如何申请萌国ICP备案</span></h2><ol><li>访问萌国ICP备案申请页面：<a href="https://icp.gov.moe/join.php">https://icp.gov.moe/join.php</a> 。在页面中选择进入选号界面。</li><li>选择一个自己喜欢的号（除前四位为年份外，其余都可以自由挑选）。</li><li>按照页面要求，在自己要申请的网站页面中加上萌国ICP备案标识（超链接，要能够跳转到萌国ICP查询页面），并填写基本信息。</li><li>之后等待审核，基本在1天左右就可以审核完成。（官方宣称1天-1周，但是我在申请的时候一天通过）</li><li>之后就可以看到自己的备案信息了，并且通过备案时申请的邮箱，可以注册萌社区，享受一系列相关业务（萌盘、萌邮等）</li></ol><h2><span id="%E9%A1%B5%E9%9D%A2%E6%88%AA%E5%9B%BE">页面截图</span></h2><p><img src="/image/moe.png"></p></body></html>]]>
+    </content>
+    <id>http://asutaka.ink/2026/02/23/17/</id>
+    <link href="http://asutaka.ink/2026/02/23/17/"/>
+    <published>2026-02-23T11:19:49.000Z</published>
+    <summary>
+      <![CDATA[<html><head></head><body><p>经过申请，本站已获得<a href="https://icp.gov.moe/">萌国ICP</a>备案，正式加入萌国宇宙。现在可以通过萌国ICP备案官网查询到本站<a href="https://icp.gov.moe/?]]>
+    </summary>
+    <title>本站已通过萌国ICP备案</title>
+    <updated>2026-02-23T11:37:35.301Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Asutaka</name>
