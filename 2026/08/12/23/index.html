@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/css/layout.css">
 
 		
-		<title> 文章归档：2026/5 -  Asutaka的小站</title>
+		<title> 尝试搭建了一个哲学学院资料库 -  Asutaka的小站</title>
 		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
 		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
 		
@@ -373,45 +373,136 @@
 			<div class="kira-content">
 				<div id="kira-top-header"></div>
 				<div class="kira-main-content">
-					<div class="kira-posts">
-    
-        <div class="kira-post">
-            <a href="/2026/05/09/22/">
-                
-                <div
-                    class="kira-post-cover mdui-ripple"
-                    style="padding-bottom: '56.25%'"
-                >
-                    <img
-                        data-src="/image/background.png"
-                        data-sizes="auto"
-                        alt="为了理想再拼一次"
-                        class="lazyload"
-                    />
-                    <h1>为了理想再拼一次</h1>
-                </div>
-                
-            </a>
+					
+<link rel="stylesheet" href="/css/kira-image.css">
 
-            <div class="kira-post-meta kira-rainbow">
-                <a>
-                    <i class="kirafont icon-calendar-fill"></i>
-                    2026年05月09日
-                </a>
-                <a>
-                    <i class="kirafont icon-edit-fill"></i>
-                    244 字
-                </a>
-                <a>
-                    <i class="kirafont icon-time-circle-fill"></i>大概
-                    1 分钟
-                </a>
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
             </div>
-    
-            
         </div>
-        <div class="kira-hr"></div>
-    
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div
+			class="kira-post-cover"
+			style="padding-bottom: '56.25%'"
+		>
+			<img
+				data-src="/image/background.png"
+				data-sizes="auto"
+				alt="尝试搭建了一个哲学学院资料库"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>尝试搭建了一个哲学学院资料库</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2026年08月12日</a>
+			<a><i class="kirafont icon-edit-fill"></i>582 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 2 分钟</a>
+		</div>
+		<html><head></head><body><h2><span id="%E8%B5%B7%E5%9B%A0">起因</span></h2><p>我在GitHub搜索安徽大学相关内容的时候，发现很多理工科学院都在上面搭建了自己学院的资料库，而且获得了很多star，说明效果很好。我考虑到自己存有相当数量的资料，以及自己有一定能力去搭建资料库，所以我决定利用暑假时间仿照他们去搭建一个哲学学院的资料库，并且在新生来了以后提供给他们。</p>
+<h2><span id="%E8%BF%87%E7%A8%8B">过程</span></h2><p>我首先要做的是编写README文档。我感觉自己要写的内容挺多的，主要是介绍该仓库以及指导如何使用。中间部分内容还借鉴了其他学院的，然后我将自己手上的资料分类好，再通过Git上传过去。我在整理过程中尽可能把文件夹分类弄细致，这样的话后期检索也很方便。</p>
+<p>上传过程持续了2星期，因为部分内容是我现成搜集的，而且部分分类还涉及到写教程的问题（不是所有人都会用Markdown），实际一个人做起来还是比较繁琐的，截至本帖编写完成，实际上资料库已经完善的差不多了，接下来的问题是如何进行推广。</p>
+<h2><span id="%E5%90%8E%E8%AE%B0">后记</span></h2><p>哲学学院是人文类学院（甚至不算社科），大多数同学可能没接触过GitHub，所以如果想普及这个资料库可能会面临很多困难，甚至包括网络环境的问题。我也想过在Gitee上同步，但是这个平台的运营感觉会有诸多不便，综合考虑GitHub仍然是最优选择。</p>
+<p>这个仓库肯定也不能只有我来更新，但是如何鼓励大家去共享自己的资料，大家又有多少积极性去分享，这也是一个问题。如果想做到像计算机学院、集成电路学院那样的规模和普及度，作为文科学院还是有很大难度的。</p>
+<p>对于这个资料库的构想，我希望它不仅能够服务哲学学院的同学，对整个安大乃至全国人文学科本科生的学习都能够有辐射作用。</p>
+</body></html>
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>本文作者：</strong>Asutaka<br>
+        <strong>本文链接：</strong><a href="http://asutaka.ink/2026/08/12/23/" title="http:&#x2F;&#x2F;asutaka.ink&#x2F;2026&#x2F;08&#x2F;12&#x2F;23&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;asutaka.ink&#x2F;2026&#x2F;08&#x2F;12&#x2F;23&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			              
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	<div class="giscus"></div>
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="Asutaka233/asutaka.ink"
+      data-repo-id="R_kgDOQEyA0g"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOQEyA0s4Cw0WW"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  
+
+	</div>
+	
 </div>
 
 				</div>
